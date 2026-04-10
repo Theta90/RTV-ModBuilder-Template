@@ -5,6 +5,13 @@ const modName = packageInfoJson.displayName;
 
 await modBuilder({
   /**
+   * Where the mod builder should look for files to include in the MOD, and where to output the built MOD.
+   * This is NOT necessarily the same as the root of your project, but it can be if you want it to be.
+   */
+  projectRoot: "",
+  outDir: "build",
+
+  /**
    * Information about the mod, which will be used to fill out the mod.txt file and other metadata.
    * The id should be unique to your mod, and is usually the same as the package name in package.json.
    * The name is the display name of the mod, and can be different from the id.
@@ -17,13 +24,6 @@ await modBuilder({
     name: modName,
     version: packageInfoJson.version,
   },
-
-  /**
-   * Where the mod builder should look for files to include in the MOD, and where to output the built MOD.
-   * This is NOT necessarily the same as the root of your project, but it can be if you want it to be.
-   */
-  projectRoot: "",
-  outDir: "build",
 
   /**
    * Globs to include in the mod.
