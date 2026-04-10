@@ -16,13 +16,14 @@ in the configured output directory.
 
 ## Configuration
 
-This file must be tailored to each specific project. The following options should
+The index.js file must be tailored to each specific project. The following options should
 be adjusted per project:
 
 - **`packageInfo`** — Suggested to use the values from `package.json`:
 - `id` — The package `name` field, used as the mod's unique identifier.
 - `name` — The package `displayName` field, used as the human-readable mod name.
 - `version` — The package `version` field.
+- `author` — A custom field that can be populated if desired (probably want to!)
 
 - **`projectRoot`** — The root directory of the project, relative to this file.
 
