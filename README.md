@@ -47,3 +47,19 @@ be adjusted per project:
 - `includeVersionInName` — Whether to append the version number to the output
   mod's name.
 - `verbose` — Whether to enable verbose logging during the build.
+
+## Example Explanation
+
+This example's HelloWorld.vmz has the following structure:
+
+```
+HelloWorld.vmz
+├── mod.txt
+├── mods
+│   └── HelloWorld
+│       └── Main.gd
+│       └── README.md
+│       └── Scripts
+│           └── Character
+
+```
