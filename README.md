@@ -38,7 +38,6 @@ be adjusted per project:
   source structure. For more details, see [text](https://www.archiverjs.com/).
 
 - **`modTxtOptions`** — Configuration for generating the mod's `mod.txt` file:
-  - `path` — Path to the source `mod.txt` template.
   - `autoload` — A map of autoload names to their corresponding script paths.
   - `author` — A custom field that can be populated if desired (probably want to!)
   Keys and values should reflect the mod's actual autoload setup.
