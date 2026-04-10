@@ -43,7 +43,6 @@ await modBuilder({
    * This helps fill out the mod.txt file for you, so you don't have to worry about formatting it correctly.
    */
   modTxtOptions: {
-    path: "src/mod.txt",
     autoload: { [`${modName}Main`]: "Main.gd" },
     author: "Theta",
   },
