@@ -48,7 +48,7 @@ be adjusted per project:
   mod's name.
 - `verbose` — Whether to enable verbose logging during the build.
 
-## Example Explanation
+## Example Output Structure
 
 This example's HelloWorld.vmz has the following structure:
 
