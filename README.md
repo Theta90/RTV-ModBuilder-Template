@@ -19,11 +19,6 @@ in the configured output directory.
 The index.js file must be tailored to each specific project. The following options should
 be adjusted per project:
 
-- **`packageInfo`** — Suggested to use the values from `package.json`:
-- `id` — The package `name` field, used as the mod's unique identifier.
-- `name` — The package `displayName` field, used as the human-readable mod name.
-- `version` — The package `version` field.
-
 - **`projectRoot`** — The root directory of the mod, relative to this file.
   This is where the builder will look for files to include in the mod.
   It can be the same as the project root, or a subdirectory if you want to
@@ -31,6 +26,11 @@ be adjusted per project:
 
 - **`outDir`** — The directory where the built mod will be output (e.g., `"build"`).
   If the projectRoot is in a subdirectory, this will output in a subdir of that.
+  
+- **`packageInfo`** — Suggested to use the values from `package.json`:
+  - `id` — The package `name` field, used as the mod's unique identifier.
+  - `name` — The package `displayName` field, used as the human-readable mod name.
+  - `version` — The package `version` field.
 
 - **`globs`** — A list of glob patterns describing which source files to include.
   Each entry accepts an `options` object supporting `ignore` patterns and a `cwd`
@@ -38,15 +38,15 @@ be adjusted per project:
   source structure. For more details, see [text](https://www.archiverjs.com/).
 
 - **`modTxtOptions`** — Configuration for generating the mod's `mod.txt` file:
-- `path` — Path to the source `mod.txt` template.
-- `autoload` — A map of autoload names to their corresponding script paths.
-- `author` — A custom field that can be populated if desired (probably want to!)
+  - `path` — Path to the source `mod.txt` template.
+  - `autoload` — A map of autoload names to their corresponding script paths.
+  - `author` — A custom field that can be populated if desired (probably want to!)
   Keys and values should reflect the mod's actual autoload setup.
 
 - **`options`** — Additional builder options:
-- `includeVersionInName` — Whether to append the version number to the output
+  - `includeVersionInName` — Whether to append the version number to the output
   mod's name.
-- `verbose` — Whether to enable verbose logging during the build.
+  - `verbose` — Whether to enable verbose logging during the build.
 
 ## Example Output Structure
 
@@ -60,6 +60,6 @@ HelloWorld.vmz
 │       └── Main.gd
 │       └── README.md
 │       └── Scripts
-│           └── Character
+│           └── Character.gd
 
 ```
