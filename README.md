@@ -23,11 +23,14 @@ be adjusted per project:
 - `id` — The package `name` field, used as the mod's unique identifier.
 - `name` — The package `displayName` field, used as the human-readable mod name.
 - `version` — The package `version` field.
-- `author` — A custom field that can be populated if desired (probably want to!)
 
-- **`projectRoot`** — The root directory of the project, relative to this file.
+- **`projectRoot`** — The root directory of the mod, relative to this file.
+  This is where the builder will look for files to include in the mod.
+  It can be the same as the project root, or a subdirectory if you want to
+  keep your source files separate from other project files.
 
 - **`outDir`** — The directory where the built mod will be output (e.g., `"build"`).
+  If the projectRoot is in a subdirectory, this will output in a subdir of that.
 
 - **`globs`** — A list of glob patterns describing which source files to include.
   Each entry accepts an `options` object supporting `ignore` patterns and a `cwd`
@@ -37,6 +40,7 @@ be adjusted per project:
 - **`modTxtOptions`** — Configuration for generating the mod's `mod.txt` file:
 - `path` — Path to the source `mod.txt` template.
 - `autoload` — A map of autoload names to their corresponding script paths.
+- `author` — A custom field that can be populated if desired (probably want to!)
   Keys and values should reflect the mod's actual autoload setup.
 
 - **`options`** — Additional builder options:
