@@ -45,6 +45,7 @@ await modBuilder({
   modTxtOptions: {
     autoload: { [`${modName}Main`]: "Main.gd" },
     author: "Theta",
+    priority: 0,
   },
 
   /**
