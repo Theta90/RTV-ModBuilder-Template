@@ -40,7 +40,6 @@ be adjusted per project:
 - **`modTxtOptions`** — Configuration for generating the mod's `mod.txt` file:
   - `autoload` — A map of autoload names to their corresponding script paths.
   - `author` — A custom field that can be populated if desired (probably want to!)
-  Keys and values should reflect the mod's actual autoload setup.
 
 - **`options`** — Additional builder options:
   - `includeVersionInName` — Whether to append the version number to the output
